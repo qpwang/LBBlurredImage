@@ -7,11 +7,8 @@ Here are an example of what you can achieve:
 
 ![](https://raw.github.com/lukabernardi/LBBlurredImage/master/Resources/SimulatorScreenshot.png)
 
-Installation & Use
+Installation
 ============
-
-# Installation
-
 ## Copy file
 This code must be used with deploy targer 6.0+ and under ARC. 
 If your code doesn't use ARC you can [mark this source with the compiler flag](http://www.codeography.com/2011/10/10/making-arc-and-non-arc-play-nice.html) `-fobjc-arc` 
@@ -25,7 +22,8 @@ You can use [CocoaPods](http://cocoapods.org) to manage your dependencies and in
 Follow the instructions on the CocoaPods site to [install the gem](https://github.com/CocoaPods/CocoaPods#installation) and add `pod 'LBBlurredImage', :git => 'git://github.com/lukabernardi/LBBlurredImage.git'` to your *Podfile*.
 
 
-# Use
+Use
+============
 
 ``` objective-c
 [self.imageView setImageToBlur:[UIImage imageNamed:@"example"]
