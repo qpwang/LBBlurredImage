@@ -75,8 +75,11 @@ CGFloat const   kLBBlurredImageDefaultBlurRadius    = 20.0;
         CGImageRef cgImage = [context createCGImage:gaussianBlurResult
                                            fromRect:[sourceImage extent]];
         
+        UIImage *blurredImage = [UIImage imageWithCGImage:cgImage];
+        CGImageRelease(cgImage);
+        
         dispatch_async(dispatch_get_main_queue(), ^{
-            selfWeak.image = [UIImage imageWithCGImage:cgImage];
+            selfWeak.image = blurredImage;
             if (completion){
                 completion(nil);
             }
