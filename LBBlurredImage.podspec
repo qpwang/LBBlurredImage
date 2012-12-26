@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/lukabernardi/LBBlurredImage.git", :revision => "0.0.1" }
   s.platform     = :ios, '6.0'
   s.source_files = 'Classes', 'LBBlurredImage/UIImageView+LBBlurredImage.{h,m}'
-  s.frameworks   = 'CoreImage', 'CoreGraphics'
+  s.frameworks   = 'CoreImage', 'CoreGraphics', 'UIKit'
   s.requires_arc = true
 end
