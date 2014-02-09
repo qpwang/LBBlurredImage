@@ -21,6 +21,8 @@
 		9FB1B4A8165051DD0076BEB5 /* LBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB1B4A6165051DD0076BEB5 /* LBViewController.xib */; };
 		9FB1B4AF1650520A0076BEB5 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB1B4AE1650520A0076BEB5 /* example.png */; };
 		9FB1B4B11650529B0076BEB5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB1B4B01650529B0076BEB5 /* CoreImage.framework */; };
+		9FFEB1AB18A7CB7F0008A469 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFEB1AA18A7CB7F0008A469 /* Accelerate.framework */; };
+		9FFEB1AE18A7D8AF0008A469 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFEB1AD18A7D8AF0008A469 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,9 @@
 		9FB1B4A7165051DD0076BEB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LBViewController.xib; sourceTree = "<group>"; };
 		9FB1B4AE1650520A0076BEB5 /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 		9FB1B4B01650529B0076BEB5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9FFEB1AA18A7CB7F0008A469 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9FFEB1AC18A7D8AF0008A469 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		9FFEB1AD18A7D8AF0008A469 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFEB1AB18A7CB7F0008A469 /* Accelerate.framework in Frameworks */,
 				9FB1B4B11650529B0076BEB5 /* CoreImage.framework in Frameworks */,
 				9FB1B48C165051DD0076BEB5 /* UIKit.framework in Frameworks */,
 				9FB1B48E165051DD0076BEB5 /* Foundation.framework in Frameworks */,
@@ -64,6 +70,8 @@
 		9F018C1E16516E0900AE2C47 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				9FFEB1AC18A7D8AF0008A469 /* UIImage+ImageEffects.h */,
+				9FFEB1AD18A7D8AF0008A469 /* UIImage+ImageEffects.m */,
 				9F8DAB0816506119006C4EF3 /* UIImageView+LBBlurredImage.h */,
 				9F8DAB0916506119006C4EF3 /* UIImageView+LBBlurredImage.m */,
 			);
@@ -90,6 +98,7 @@
 		9FB1B48A165051DD0076BEB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FFEB1AA18A7CB7F0008A469 /* Accelerate.framework */,
 				9FB1B4B01650529B0076BEB5 /* CoreImage.framework */,
 				9FB1B48B165051DD0076BEB5 /* UIKit.framework */,
 				9FB1B48D165051DD0076BEB5 /* Foundation.framework */,
@@ -110,7 +119,6 @@
 				9FB1B4A6165051DD0076BEB5 /* LBViewController.xib */,
 				9FB1B492165051DD0076BEB5 /* Supporting Files */,
 			);
-			name = LBBlurredImage;
 			path = LBBlurredImage;
 			sourceTree = "<group>";
 		};
@@ -197,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FB1B498165051DD0076BEB5 /* main.m in Sources */,
+				9FFEB1AE18A7D8AF0008A469 /* UIImage+ImageEffects.m in Sources */,
 				9FB1B49C165051DD0076BEB5 /* LBAppDelegate.m in Sources */,
 				9FB1B4A5165051DD0076BEB5 /* LBViewController.m in Sources */,
 				9F8DAB0A16506119006C4EF3 /* UIImageView+LBBlurredImage.m in Sources */,

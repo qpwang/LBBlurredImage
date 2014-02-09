@@ -27,8 +27,8 @@
 {
     [self.imageView setImageToBlur:[UIImage imageNamed:@"example"]
                         blurRadius:kLBBlurredImageDefaultBlurRadius
-                   completionBlock:^(NSError *error){
-                       NSLog(@"The blurred image has been setted");
+                   completionBlock:^(){
+                       NSLog(@"The blurred image has been set");
                    }];
 }
 
