@@ -13,7 +13,7 @@ Installation
 This code must be used with deploy targer 6.0+ and under ARC. 
 If your code doesn't use ARC you can [mark this source with the compiler flag](http://www.codeography.com/2011/10/10/making-arc-and-non-arc-play-nice.html) `-fobjc-arc` 
 
-- Just grab the two file named `UIImageView+LBBlurredImage.h` & `UIImageView+LBBlurredImage.m` in the Additions group into your project and link with CoreImage.framework .
+- Just grab the two file named `UIImageView+LBBlurredImage.{h,m}` and `UIImageImage+ImageEffects.{h,m}` in the Additions group into your project and link with Accelerate.framework .
 - `#import "UIImageView+LBBlurredImage.h"` where you need it.
 
 ## CocoaPods
