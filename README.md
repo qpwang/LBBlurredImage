@@ -28,12 +28,12 @@ Use
 ``` objective-c
 [self.imageView setImageToBlur:[UIImage imageNamed:@"example"]
                     blurRadius:kLBBlurredImageDefaultBlurRadius
-               completionBlock:^(NSError *error){
-                   NSLog(@"The blurred image has been setted");
+               completionBlock:^(){
+                   NSLog(@"The blurred image has been set");
                }];
 ```
 
-The generation of the blurred image is made on a background thread, for this reason a completion block is provided. The completionBlock is dispatched on the main thread when the image was generated and set to the UIImageView.
+The generation of the blurred image is made on a background thread, for this reason a completion block is provided. The completionBlock is dispatched on the main thread when the image has been generated and set to the UIImageView.
 
 The code is provided with an example project if you want to see the class in actions.
 
