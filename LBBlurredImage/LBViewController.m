@@ -25,6 +25,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     [self.imageView setImageToBlur:[UIImage imageNamed:@"example"]
                         blurRadius:kLBBlurredImageDefaultBlurRadius
                    completionBlock:^(){
