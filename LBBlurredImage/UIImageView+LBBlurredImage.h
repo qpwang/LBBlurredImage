@@ -19,6 +19,21 @@ extern CGFloat const kLBBlurredImageDefaultBlurRadius;
  
  @param UIImage the image to blur and set as UIImageView's image
  @param CGFLoat the radius of the blur used by the Gaussian filter
+ @param CGFLoat the saturationDeltaFactor of image
+ @param LBBlurredImageCompletionBlock a completion block called after the image
+
+ was blurred and set to the UIImageView (the block is dispatched on main thread)
+ */
+- (void)setImageToBlur:(UIImage *)image
+            blurRadius:(CGFloat)blurRadius
+ saturationDeltaFactor:(CGFloat)saturationDeltaFactor
+       completionBlock:(LBBlurredImageCompletionBlock) completion;
+
+/**
+ Set the blurred version of the provided image to the UIImageView
+ 
+ @param UIImage the image to blur and set as UIImageView's image
+ @param CGFLoat the radius of the blur used by the Gaussian filter
  @param LBBlurredImageCompletionBlock a completion block called after the image
     was blurred and set to the UIImageView (the block is dispatched on main thread)
  */
